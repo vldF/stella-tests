@@ -1,6 +1,6 @@
 language core;
 
-extend with #sum-types, #unit-type;
+extend with #sum-types, #unit-type, #structural-patterns;
 
 fn test(first : Bool) -> Nat + Unit {
   return if first then inl(succ(0)) else inr(unit)
